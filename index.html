@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8' />
+	
+	<title>Widget Corp</title>
+	
+	<link rel='stylesheet' href='css/style.css' />
+	
+	<!-- only load on home page -->
+	<link rel='stylesheet' href='css/home.css' />
+	<link rel='stylesheet' href='css/jquery-ui-1.8.1.css'>
+	
+	
+	
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js'></script>
+	<script src='js/jquery.hoverflow.min.js'></script>
+	<script src='js/widgetcorp.js'></script>
+	<script src='js/homepage.js'></script>
+</head>
+
+<body>
+
+	<div id="page-wrap" class="group">
+	
+		<header>
+			<div id="logo"></div>
+			
+			<h1>Widget Corp</h1>
+			
+			<p>Est. 1987</p>
+		</header>
+		
+		<div id="main-content">
+			
+			<p id="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+			
+			<blockquote id="main-quote">
+				We are able to do the work we do because
+				of the quality of these widgets
+				<cite>- Frank James, Tick Tock Corp.</cite>
+			</blockquote>
+			
+			<h2>Featured Widgets</h2>
+			
+			<ul id="featured-widgets">
+				<li>
+					<h3>Super Sprocket 1000</h3>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					<img src="images/prod-supersprocket.png" alt="product image" />
+					<a href="#" class="button">View Product</a>
+				</li>
+				<li>
+					<h3>Triple Sprunkler</h3>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					<img src="images/prod-sprunkler.png" alt="product image" />
+					<a href="#" class="button">View Product</a>
+				</li>
+			</ul>
+			
+			<br />
+
+			<h2>Web Special<em> of the</em> Week</h2>
+
+			<div class="coupon">
+				Buy two sprockets get the third free!
+			</div>
+			
+		</div> <!-- END main-content -->
+		
+		<aside>
+			
+			<form action="#" id="searchform" method="get">
+				<div>
+					
+					<input type=search results=5 placeholder=Search... id=s name=s>
+
+					<input type="submit" value="Search" id="searchsubmit" class="screen-reader-text">
+				</div>
+			</form>
+			
+			<nav>
+				<ul id="main-nav">
+					<li class="home"><a href="#">Home <span></span></a></li>
+					<li class="about"><a href="#">About Us <span></span></a></li>
+					<li class="contact"><a href="#">Contact us <span></span></a></li>
+					<li class="store"><a href="#">Buy Widgets <span></span></a></li>
+					<li class="blog"><a href="#">The Grind <em>(our blog)</em> <span></span></a></li>
+				</ul>
+			</nav>
+			
+			<div class="widget latest-post">
+
+				<h4>Latest Post</h4>
+
+				<div class="sidebar-post">
+					<p class="date">March 10, 2010<span></span></p>
+					<h5>This just in: Don't get Gremlins Wet!</h5>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+				</div>
+
+			</div> <!-- END Latest Posts -->
+
+			<div class="widget industry-news">
+
+				<h4>Industry News</h4>
+
+				<div class="sidebar-post">
+					<p class="date">March 11, 2010<span></span></p>
+					<h5>Widgets are the new Sprockets</h5>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+				</div>
+
+				<div class="sidebar-post">
+					<p class="date">March 03, 2010<span></span></p>
+					<h5>Fifth Birthday of the Intersprockletometer</h5>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+				</div>
+
+			</div> <!-- END Industry News -->
+			
+		</aside>
+	
+	</div> <!-- END page-wrap -->
+	
+	<footer class="group">
+		<div id="quote">One wheel turns another</div>
+		<div id="copyright">&copy;2010 Widget Corp</div>
+	</footer>
+	
+</body>
+
+</html>

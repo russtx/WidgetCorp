@@ -1,0 +1,444 @@
+/*   
+Theme Name: Widget Corp Theme
+Theme URI: http://digwp.com
+Description: Theme for Widget Corp
+Author: Russ Berge
+Author URI: http://hwy87media.com
+Version: 1.1
+*/
+
+@media screen {
+
+* { margin: 0; padding: 0; }
+html { background: black url(../images/bg.jpg); }
+body { font: 12px/1.4 Georgia, serif; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+
+article, aside, figure, footer, header, nav, section { display: block; }
+
+.post { margin: 0 0 40px 0; }
+.post a { font-weight: bold; border-bottom: 1px dotted #647484; }
+.post a:hover { border-bottom: 1px solid white; }
+.post h4, .post h4 a, .post h4 a:hover { border: 0; margin: 0; }
+.post h4 a:hover { text-decoration: underline; }
+.post * ~ h3, .post * ~ h4 { margin-top: 25px; }
+
+.meta { background: url(../images/bg.png); padding: 1px 5px; color: #eee; margin: 5px 0; }
+
+.button { 
+	background-image: -moz-linear-gradient(top, #6b7886, #3b4f63); 
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #6b7886),color-stop(1, #3b4f63)); 
+	padding: 5px 15px; 
+	color: white; 
+	font-weight: normal !important;
+	text-decoration: none; 
+	text-transform: uppercase; 
+	border: 2px solid white !important; 
+	-moz-box-shadow: 1px 1px 3px #666; 
+	-webkit-box-shadow: 1px 1px 3px #666; 
+	box-shadow: 1px 1px 3px #666;
+}
+.button:hover { 
+	background-image: none; 
+	background-color: #6b7886; 
+	-moz-box-shadow: 0px 0px 2px #999; 
+	-webkit-box-shadow: 0px 0px 2px #999; 
+	box-shadow: 0px 0px 2px #999; 
+	text-decoration: none !important; 
+}
+
+#page-wrap { 
+	width: 800px; 
+	margin: 30px auto 10px; 
+	background: white url(../images/mailmark.png) top right no-repeat; 
+}
+
+header { 
+	position: relative; 
+	padding: 0 0 0 280px; 
+	border-bottom: 1px solid #999; 
+}
+
+header p { 
+	position: absolute; 
+	right: 30px; 
+	bottom: 20px; 
+	text-transform: uppercase; 
+	letter-spacing: 2px; 
+	font-size: 20px; 
+}
+
+h1 { 
+	font: 40px Helvetica, Arial, Sans-Serif;
+	text-transform: uppercase; 
+	color: #666; 
+	text-shadow: 2px 2px 0 #d8d8dc; 
+	border-left: 1px solid #999; 
+	padding: 40px 0 20px 20px; 
+}
+
+h2 {
+	color: #647484;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 0 #d8d8dc;
+	font-weight: normal;
+	font-size: 26px
+	margin: 0 0 12px 0;
+	letter-spacing: 5px;
+}
+
+#logo { 
+	position: absolute; 
+	top: -25px; 
+	left: -50px; 
+	background: url(../images/logo.png) no-repeat; 
+	width: 295px; 
+	height: 191px; 
+}
+
+aside {
+	float: left;
+	width: 275px;
+	padding: 70px 0 0 0;
+}
+
+#main-content {
+	float: right;
+	width: 467px;
+	padding: 0 30px 0 0;
+}
+
+#main-content h2 {
+	padding-bottom: 30px;
+	font-size: 1.8em;
+	font-weight: 575;
+}
+nav ul {
+	list-style: none; 
+	margin: 0 0 15px 0; 
+}
+
+nav li { 
+	margin: 0 0 5px 0; 
+}
+
+nav li a { 
+	background-color: #909673; 
+	overflow: visible !important; 
+	font-size: 16px;
+	text-decoration: none; 
+	padding: 10px 10px 10px 25px; 
+	width: 233px; 
+	display: block; 
+	color: white; 
+	position: 
+	relative; 
+	left: 0px; 
+	text-indent: 26px; 
+}
+
+nav li a em {
+	font-size: 13px; 
+}
+
+nav li a span, .date span { 
+	background-color: #909673; 
+	background-image: url(../images/shadowLeft.png); 
+	background-position: top right; background-repeat; 
+	repeat-y; position: absolute; right: 100%; height: 
+	100%; width: 20px; top: 5px; 
+}
+
+nav li:nth-child(1) a, nav li:nth-child(1) a span { 
+	background-color: #5c5d91; 
+}
+
+nav li:nth-child(2) a, nav li:nth-child(2) a span { 
+	background-color: #647484; 
+}
+
+nav li:nth-child(3) a, nav li:nth-child(3) a span { 
+	background-color: #728c8c; 
+}
+
+nav li:nth-child(4) a, nav li:nth-child(4) a span { 
+	background-color: #768c72; 
+}
+
+nav li:nth-child(5) a, nav li:nth-child(5) a span { 
+	background-color: #909673; 
+}
+
+nav li a:hover { 
+	text-decoration: none; 
+	background-color: #666; 
+}
+
+nav li a:hover span { 
+	background-color: #666; 
+}
+
+.coupon { 
+	border: 5px dashed #ccc; 
+	padding: 20px; text-align: center; 
+	-moz-transform: rotate(-2deg); 
+	font-size: 20px; 
+}
+
+.breadcrumb { 
+	background: #eee; 
+	padding: 1px 5px; 
+}
+
+.widget {
+	 background: url(../images/shadowTopRight.png) top right no-repeat; 
+	 padding: 17px 22px 0 0; margin: 0 0 30px 0; 
+}
+
+.widget h5 { 
+	color: #555; 
+}
+
+.widget p { 
+	color: #999; 
+	line-height: 1.5; 
+}
+
+.sidebar-post { 
+	margin: 0 0 20px 0; 
+}
+
+.date { 
+	position: relative; 
+	left: -30px; 
+	text-align: right; 
+	padding: 0px 8px 2px; width: 187px; 
+}
+
+.latest-post {
+	background: url(../images/widget-shadow.png) top right no-repeat;
+	padding: 30px;
+}
+
+.latest-post h4 {
+	 color: #909673;
+	text-align: right;
+	font-size: 16px;
+	text-shadow: 2px 2px 0 #d8d8dc;
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+
+.latest-post .date { 
+	background: #909673; 
+	color: #e7e9dd;
+	width: 240px;
+	text-transform: uppercase;
+	letter-spacing: 3px; 
+	padding: 2px 0; 
+}
+
+.latest-post .date span {
+	position: absolute;
+	right: 100%;
+	top: 5px;
+	width: 15px;
+	height: 100%;
+	background-color: #909673;
+	background-image: url(../images/navshadow.png);
+	background-position: right top;
+	background-repeat: repeat-y; 
+}
+
+.latest-post h5 {
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0 0 6px 0;
+	padding: 10px 0;
+}
+
+.industry-news {
+	background: url(../images/widget-shadow.png) top right no-repeat;
+	padding: 30px;
+}
+
+.industry-news h4 { 
+	color: #ad7601; 
+	text-align: right;
+	font-size: 16px;
+	text-shadow: 2px 2px 0 #d8d8dc;
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+	letter-spacing: 5px;
+	font-weight: normal;
+}
+
+.industry-news .date {
+	background: #ad7601; 
+	color: #e7e9dd; 
+	width: 240px;
+	text-transform: uppercase;
+	letter-spacing: 3px; 
+	padding: 2px 0;
+}
+
+.industry-news .date span {
+	position: absolute;
+	right: 100%;
+	top: 5px;
+	width: 15px;
+	height: 100%;
+	background-color: #AD7601;
+	background-image: url(../images/navshadow.png);
+	background-position: right top;
+	background-repeat: repeat-y; 
+}
+
+.industry-news h5 {
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0 0 6px 0;
+	padding: 10px 0;
+}
+
+#searchform #s {
+	width: 188px; 
+	margin: 0 0 10px 0; 
+}
+
+.ui-tooltip {
+	padding: 8px; position: absolute; 
+	z-index: 999; 
+	-moz-box-shadow: 0 0 5px #aaa; 
+	-webkit-box-shadow: 0 0 5px #aaa; 
+	box-shadow: 0 0 5px #aaa; 
+}
+
+* html .ui-tooltip {
+	background-image: none; 
+}
+ 
+/* Fades and background-images don't work well together in IE6, drop the image */
+
+body .ui-tooltip {
+	border-width: 2px; 
+}
+
+.mini { float: left; margin: 0 10px 0 0; }
+
+footer {
+	width: 800px;
+	margin: 0 auto 20px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#quote {
+	width: 50%;
+	float: left;
+}
+
+#copyright {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.screen-reader-text {
+	margin: 5px 0 5px 30px;
+}
+
+#searchform {
+	margin: 5px 20px;
+}
+
+} /* END screen media */
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { 
+	width: 100% !important;
+	 margin: 0 !important;
+	 padding: 0 !important; 
+	 line-height: 1.4; 
+	 word-spacing: 1.1pt; 
+	 letter-spacing: 0.2pt; 
+	 font-family: Garamond,"Times New Roman", serif; color: #000; 
+	 background: none; font-size: 12pt; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+	 font-family: Helvetica, Arial, sans-serif; 
+}
+
+h1 {
+	font-size: 19pt; 
+}
+
+h2 {
+	 font-size:17pt;
+}
+
+h3 {
+	font-size:15pt; 
+}
+
+h4,h5,h6 {
+	font-size:12pt; 
+}
+
+code {
+	font: 10pt Courier, monospace; 
+}
+ 
+blockquote { 
+	margin: 1.3em; 
+	padding: 1em; 
+}
+
+img {
+	display: block; 
+	margin: 1em 0; 
+}
+a img { 
+	border: none; 
+}
+
+table {
+	margin: 1px; 
+	text-align:left;
+}
+
+th {
+	border-bottom: 1px solid #333;  
+	font-weight: bold; 
+}
+
+td { 
+	border-bottom: 1px solid #333; 
+}
+
+th, td { 
+	padding: 4px 10px 4px 0; 
+}
+
+caption { 
+	background: #fff; 
+	margin-bottom: 2em; 
+	text-align: left; 
+}
+
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+
+} /* END print media */
